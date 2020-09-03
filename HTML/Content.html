@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="../style.css">
+  <title>Contenido</title>
+</head>
+<body>
+  <h1>La etiqueta html</h1>
+  Las etiquetas html indica al navegador que todo lo que esté entre ellas debe ser
+  interpretado cómo html. Normalmente dentro de html hay 2 cosas:
+
+  <ul>
+    <li> &lt;head&gt;&lt;/head&gt;: Provee información (metadata) para indicar al navegador información sobre la página. </li>
+    <li> &lt;body&gt;&lt;/body&gt;:Tiene el contenido de la página html </li>
+  </ul>
+
+  <pre>
+    &lt;!DOCTYPE html&gt;
+    &lt;html&gt
+      &lt;head&gt
+        &lt;meta charset="utf-8"&gt;
+        &lt;title&gt; &lt;/title&gt;
+      &lt;/head&gt
+      &lt;body&gt
+        contenido html
+      &lt;/body&gt
+    &lt;/html&gt;
+  </pre>
+
+  <br>
+  <hr>
+
+  <h1>Etiquetas meta</h1>
+
+  Dentro del header, las etiquetas meta brindan información a dicional al navegador
+
+  <br>
+  <hr>
+
+  <h1>Títulos con los tag h</h1>
+
+  Los títulos se escriben con los tags &lt;h1&gt; a &lt;h6&gt;
+  <br>
+  <pre>
+    &lt;h1&gt; Título con h1 &lt;/h1&gt;
+    &lt;h2&gt; Título con h2 &lt;/h2&gt;
+    &lt;h3&gt; Título con h3 &lt;/h3&gt;
+    &lt;h4&gt; Título con h4 &lt;/h4&gt;
+    &lt;h5&gt; Título con h5 &lt;/h5&gt;
+    &lt;h6&gt; Título con h6 &lt;/h6&gt;
+  </pre>
+
+  <br>
+  <hr>
+
+  <h1>Saltos de linea</h1>
+  Los saltos de linea se pueden hacer en html con el tag &lt;br&gt;
+  <br>
+  <pre>
+    Sálto de linea despues de este texto
+    &lt;br&gt;
+  </pre>
+
+  <br>
+  <hr>
+
+  <h1>Comentarios</h1>
+
+  Los comentarios se escriben de la siguiente forma
+
+  <pre>
+    &lt;!-- TODO ESTO ES COMENTADO --&gt;
+  </pre>
+
+  <br>
+  <hr>
+
+  <h1>Las reglas horizontales (lineas de división)</h1>
+  Para imprimir una linea y separar dos secciones, está la etiqueta
+  &lt;hr&gt;
+
+  <pre>
+    Se crea una linea entre esto
+    &lt;hr&gt;
+    y Esto
+  </pre>
+
+  <br>
+  <hr>
+
+  <h1>Listas</h1>
+
+  Existen 2 tipos de listas (ordenadas y no ordenadas). Las no ordenadas están
+  compuestas por bulets. Las ordenadas pueden ser numeradas de diferente forma.
+  <br>
+
+  Para crear una lista no ordenada basta con las etiquetas:
+  <pre>
+    &lt;ul&gt;
+      &lt;li&gt;Elemento&lt;/li&gt;
+      &lt;li&gt;Elemento&lt;/li&gt;
+      &lt;li&gt;Elemento&lt;/li&gt;
+    &lt;/ul&gt;
+  </pre>
+
+  Para crear una lista ordenada basta con las etiquetas:
+  <pre>
+    &lt;ol&gt;
+      &lt;li&gt;Elemento&lt;/li&gt;
+      &lt;li&gt;Elemento&lt;/li&gt;
+      &lt;li&gt;Elemento&lt;/li&gt;
+    &lt;/ol&gt;
+  </pre>
+
+  Se puede utilizar el atributo type en la etiquta ol para cambiar el timpo de
+  numeración.
+
+  <br>
+  <hr>
+
+  <h1>Anchor tag</h1>
+
+  Permite crear links (hypertext) a otros documentos html.
+
+  <pre>
+    &lt;a&gt;ESTE ES UN LINK&lt;/a&gt;
+  </pre>
+
+  <br>
+  <hr>
+
+  <h1>Tablas</h1>
+
+  Las tablas tienen 2 propósitos:
+  <ol>
+    <li>Mostrar atributos de contenido (tablas o grid normales)</li>
+    <li>Dar formato a código html en la pantalla (layout)</li>
+  </ol>
+
+  Para mostrar una tabla se requiere de 6 etiquetas:
+
+  <ol>
+    <li>Etiqueta table</li>
+    <li>Etiqueta thead para definir el titulo</li>
+    <li>Etiqueta tbody para definir el cuerpo de la tabla</li>
+    <li>Etiqueta tr para indicar filas de contenido (en thead o tbody)</li>
+    <li>etiquetas td para indicar el contenido de una celda</li>
+    <li>En el thead puede sustituirse el td por th para formato de titulo</li>
+  </ol>
+
+  Para mostrar el margen entre elementos, a la etiqueta table se le da un border
+
+  <pre>
+    &lt;table border="2"&gt;
+      &lt;thead&gt;
+        &lt;tr&gt;
+          &lt;th&gt;TITULO 1&lt;/th&gt;
+          &lt;th&gt;TITULO 2&lt;/th&gt;
+        &lt;/tr&gt;
+      &lt;/thead&gt;
+      &lt;tbody&gt;
+        &lt;tr&gt;
+          &lt;td&gt;Dato 1&lt;/td&gt;
+          &lt;td&gt;Dato 2&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;Dato 3&lt;/td&gt;
+          &lt;td&gt;Dato 4&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/tbody&gt;
+    &lt;/table&gt;
+  </pre>
+
+  Resultado:
+
+  <pre>
+    <table border="2">
+      <thead>
+        <tr>
+          <th>TITULO 1</th>
+          <th>TITULO 2</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Dato 1</td>
+          <td>Dato 2</td>
+        </tr>
+        <tr>
+          <td>Dato 3</td>
+          <td>Dato 4</td>
+        </tr>
+      </tbody>
+    </table>
+  </pre>
+</body>
+</html>

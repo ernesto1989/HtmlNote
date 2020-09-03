@@ -1,224 +1,38 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="es" dir="ltr">
   <head>
     <meta charset="utf-8">
     <title>Documentación HTML</title>
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="../img/favicon.ico">
   </head>
   <body>
     <h1>NOTAS SOBRE HTML</h1>
     <p>
-      Html = Hypertext Markup Language.
+      Html: Hypertext Markup Language.
       <br>
-      Hypertext es la parte de HTML que permite crear hypertexto o hyperlinks.
-      Markup viene de la imprenta, cuando se usaban "markups" para brindar information
+      <br>
+      Hypertext: Es la parte de HTML que permite crear hypertexto o hyperlinks. Son enlaces a otros
+      documentos HTML.
+      <br>
+      <br>
+      Markup: Los markups son un concepto que viene de la imprenta, cuando se usaban "markups" para brindar information
       sobre como dar formato al texto escrito.
+      <br>
+      <br>
+      Los documentos HTML permiten generar la estructura general de documentos o aplicaciones. Se convina con Javascript y CSS para generar
+      aplicaciones web con funcionalidad definida y un diseño especializado.
     </p>
     <br>
     <hr>
-    <h1>Doctype</h1>
-    <p>El doctype permite a los navegadores saber con qué versión de html está escrito el documento.
-    <br>
-    El doctype de html5 es:
-    <pre>
-      &lt;!DOCTYPE html&gt;
-    </pre>
-    <br>
-    El doctype de html4 es:
-    <pre>
-      &lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"&gt;
-    </pre>
-    <br>
-    </p>
-    <hr>
-
-    <h1>La etiqueta html</h1>
-    Las etiquetas html indica al navegador que todo lo que esté entre ellas debe ser
-    interpretado cómo html. Normalmente dentro de html hay 2 cosas:
-
-    <ul>
-      <li> &lt;head&gt;&lt;/head&gt;: Provee información (metadata) para indicar al navegador información sobre la página. </li>
-      <li> &lt;body&gt;&lt;/body&gt;:Tiene el contenido de la página html </li>
-    </ul>
-
-    <pre>
-      &lt;!DOCTYPE html&gt;
-      &lt;html&gt
-        &lt;head&gt
-          &lt;meta charset="utf-8"&gt;
-          &lt;title&gt; &lt;/title&gt;
-        &lt;/head&gt
-        &lt;body&gt
-          contenido html
-        &lt;/body&gt
-      &lt;/html&gt;
-    </pre>
-
-    <br>
-    <hr>
-
-    <h1>Etiquetas meta</h1>
-
-    Dentro del header, las etiquetas meta brindan información a dicional al navegador
-
-    <br>
-    <hr>
-
-    <h1>Títulos con los tag h</h1>
-
-    Los títulos se escriben con los tags &lt;h1&gt; a &lt;h6&gt;
-    <br>
-    <pre>
-      &lt;h1&gt; Título con h1 &lt;/h1&gt;
-      &lt;h2&gt; Título con h2 &lt;/h2&gt;
-      &lt;h3&gt; Título con h3 &lt;/h3&gt;
-      &lt;h4&gt; Título con h4 &lt;/h4&gt;
-      &lt;h5&gt; Título con h5 &lt;/h5&gt;
-      &lt;h6&gt; Título con h6 &lt;/h6&gt;
-    </pre>
-
-    <br>
-    <hr>
-
-    <h1>Saltos de linea</h1>
-    Los saltos de linea se pueden hacer en html con el tag &lt;br&gt;
-    <br>
-    <pre>
-      Sálto de linea despues de este texto
-      &lt;br&gt;
-    </pre>
-
-    <br>
-    <hr>
-
-    <h1>Comentarios</h1>
-
-    Los comentarios se escriben de la siguiente forma
-
-    <pre>
-      &lt;!-- TODO ESTO ES COMENTADO --&gt;
-    </pre>
-
-    <br>
-    <hr>
-
-    <h1>Las reglas horizontales (lineas de división)</h1>
-    Para imprimir una linea y separar dos secciones, está la etiqueta
-    &lt;hr&gt;
-
-    <pre>
-      Se crea una linea entre esto
-      &lt;hr&gt;
-      y Esto
-    </pre>
-
-    <br>
-    <hr>
-
-    <h1>Listas</h1>
-
-    Existen 2 tipos de listas (ordenadas y no ordenadas). Las no ordenadas están
-    compuestas por bulets. Las ordenadas pueden ser numeradas de diferente forma.
-    <br>
-
-    Para crear una lista no ordenada basta con las etiquetas:
-    <pre>
-      &lt;ul&gt;
-        &lt;li&gt;Elemento&lt;/li&gt;
-        &lt;li&gt;Elemento&lt;/li&gt;
-        &lt;li&gt;Elemento&lt;/li&gt;
-      &lt;/ul&gt;
-    </pre>
-
-    Para crear una lista ordenada basta con las etiquetas:
-    <pre>
-      &lt;ol&gt;
-        &lt;li&gt;Elemento&lt;/li&gt;
-        &lt;li&gt;Elemento&lt;/li&gt;
-        &lt;li&gt;Elemento&lt;/li&gt;
-      &lt;/ol&gt;
-    </pre>
-
-    Se puede utilizar el atributo type en la etiquta ol para cambiar el timpo de
-    numeración.
-
-    <br>
-    <hr>
-
-    <h1>Anchor tag</h1>
-
-    Permite crear links (hypertext) a otros documentos html.
-
-    <pre>
-      &lt;a&gt;ESTE ES UN LINK&lt;/a&gt;
-    </pre>
-
-    <br>
-    <hr>
-
-    <h1>Tablas</h1>
-
-    Las tablas tienen 2 propósitos:
+    <h1>Contenido</h1>
     <ol>
-      <li>Mostrar atributos de contenido (tablas o grid normales)</li>
-      <li>Dar formato a código html en la pantalla (layout)</li>
+      <li><a href="Doctype.html">Doctype</a> <br></li>
+      <li><a href="Content.html">Mas contenido</a><br></li>
+      <li><a href="../index.html">Regresar</a><br></li>
     </ol>
 
-    Para mostrar una tabla se requiere de 6 etiquetas:
 
-    <ol>
-      <li>Etiqueta table</li>
-      <li>Etiqueta thead para definir el titulo</li>
-      <li>Etiqueta tbody para definir el cuerpo de la tabla</li>
-      <li>Etiqueta tr para indicar filas de contenido (en thead o tbody)</li>
-      <li>etiquetas td para indicar el contenido de una celda</li>
-      <li>En el thead puede sustituirse el td por th para formato de titulo</li>
-    </ol>
-
-    Para mostrar el margen entre elementos, a la etiqueta table se le da un border
-
-    <pre>
-      &lt;table border="2"&gt;
-        &lt;thead&gt;
-          &lt;tr&gt;
-            &lt;th&gt;TITULO 1&lt;/th&gt;
-            &lt;th&gt;TITULO 2&lt;/th&gt;
-          &lt;/tr&gt;
-        &lt;/thead&gt;
-        &lt;tbody&gt;
-          &lt;tr&gt;
-            &lt;td&gt;Dato 1&lt;/td&gt;
-            &lt;td&gt;Dato 2&lt;/td&gt;
-          &lt;/tr&gt;
-          &lt;tr&gt;
-            &lt;td&gt;Dato 3&lt;/td&gt;
-            &lt;td&gt;Dato 4&lt;/td&gt;
-          &lt;/tr&gt;
-        &lt;/tbody&gt;
-      &lt;/table&gt;
-    </pre>
-
-    Resultado:
-
-    <pre>
-      <table border="2">
-        <thead>
-          <tr>
-            <th>TITULO 1</th>
-            <th>TITULO 2</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Dato 1</td>
-            <td>Dato 2</td>
-          </tr>
-          <tr>
-            <td>Dato 3</td>
-            <td>Dato 4</td>
-          </tr>
-        </tbody>
-      </table>
-    </pre>
+    <hr>
   </body>
 </html>
